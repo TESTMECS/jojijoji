@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Chin';
+    src: url('./assets/Chintzy/chintzy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-image: url(./assets/tile01.gif);
+    filter: brightness(20%);
+}
+body {
+    font-family: 'Chin', monospace;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+#Home {
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
