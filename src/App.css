@@ -5,17 +5,13 @@
     font-style: normal;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-    background-image: url(./assets/tile01.gif);
-    filter: brightness(20%);
+#counter{
+  background-image: url("./assets/tile01.gif");
+  
+  filter: brightness(20%);
 }
+    
+    
 body {
     font-family: 'Chin', monospace;
 }
@@ -35,11 +31,16 @@ body {
   border-bottom-width: 4px;
   border-right-width: 4px;
 }
-#Home {
-  overflow: hidden;
-  position: relative;
-  background-color: black;
+#progressbar{
+  width: 50%;
+  
 }
+#volcontrol{
+  
+  appearance: slider-vertical;
+  
+}
+
 
 
 

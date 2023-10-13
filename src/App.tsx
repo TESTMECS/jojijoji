@@ -5,9 +5,12 @@ function App() {
   
 
   return (
-    <>
-    <Counter delay1={10} delay2={20} delay3={15} />
-    </>
+  
+  
+  <Counter delay1={10} delay2={20} delay3={15} />
+      
+    
+    
   )
 }
 

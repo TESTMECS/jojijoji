@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Home from "./Home"
+import "../App.css"
 
 
 interface Props {
@@ -20,6 +21,10 @@ const Counter: React.FC<Props> = ({ delay1, delay2, delay3 }) => {
   const [running3, setRunning3] = useState(true);
   const scrollHandler = () => {
     const viewportHeight = window.innerHeight;
+    const arrow: HTMLElement | null = document.getElementById("arrow"); 
+    if (arrow) {
+        arrow.style.opacity = "0"; 
+    }
     window.scrollBy({
       top: viewportHeight,
       behavior: 'smooth'
@@ -82,17 +87,19 @@ const Counter: React.FC<Props> = ({ delay1, delay2, delay3 }) => {
 
   return (
     <>
-  <div className="flex h-screen items-center justify-center text-9xl text-color-white">
+    <main id="counter">
+  <div className="z-0 flex h-screen items-center justify-center text-9xl text-white">
     <div> {count1.toString().padStart(2, '0')}</div>
     <span> : </span>
     <div> {count2.toString().padStart(2, '0')}</div>
     <span> : </span>
     <div> {count3.toString().padStart(2, '0')}</div>
   </div>
+  </main>
   <div>
     {count1 === 100 && (
       <div className="flex justify-center align-center">
-        <div onClick={scrollHandler} className='arrow fixed bottom-5'>
+        <div id="arrow" onClick={scrollHandler} className='z-10 arrow fixed bottom-5'>
          
         </div>
         <div> 
