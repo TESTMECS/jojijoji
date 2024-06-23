@@ -1,19 +1,18 @@
 @font-face {
-    font-family: 'Chin';
-    src: url('./assets/Chintzy/chintzy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Chin";
+  src: url("./assets/Chintzy/chintzy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-#counter{
+#counter {
   background-image: url("./assets/tile01.gif");
-  
+
   filter: brightness(20%);
 }
-    
-    
+
 body {
-    font-family: 'Chin', monospace;
+  font-family: "Chin", monospace;
 }
 
 .arrow {
@@ -31,23 +30,11 @@ body {
   border-bottom-width: 4px;
   border-right-width: 4px;
 }
-#progressbar{
+#progressbar {
   width: 50%;
-  
 }
-#volcontrol{
-  
+#volcontrol {
   appearance: slider-vertical;
-  
+  margin-top: 50px;
+  margin-left: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
